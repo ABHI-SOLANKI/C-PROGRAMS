@@ -1,20 +1,25 @@
-/*  define a game like program,in which user has to enter an even number to win the game user will 
-    get at mosst 3 chances*/
+//WAP to print following pattern.[Second type]
+/*
+          *
+         * *
+        * * *
+       * * * *
+      * * * * * 
+*/
 
 #include<stdio.h>
-void main()
+int main()
 {
-    int x,i;
-    for (i=1;i<=3;i++)
+    int i,j;
+    for(i=1;i<=5;i++)
     {
-        printf("Enter An Even Number");
-        scanf("%d",&x);
-
-        if(x%2==0)
-            break;
+        for(j=1;j<=5;j++)
+        {
+            if (i>=j)
+                printf("*");
+            else
+                printf(" ");
+        }
+        printf("\n");
     }
-    if (i==4)
-        printf("GAME OVER");
-    else
-        printf("YOU WIN");
 }
