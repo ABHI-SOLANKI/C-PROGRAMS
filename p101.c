@@ -1,20 +1,20 @@
-//WAP which calculate the multiplication using structure.
+//WAP which accept 7 subject mark for 1 student using array within structure.
 
 #include<stdio.h>
-struct mul
+struct std
 {
-    int a,b;   
-}s1;
+    int m[7];
+}s;
 int main()
 {
-    int ans1,ans2;
-    printf("Enter A Number 1:-");
-    scanf("%d",&s1.a);
-    printf("Enter A Number 2:-");
-    scanf("%d",&s1.b);
-
-    ans1=s1.a * s1.b;
-
-    printf("\nAns of mul is=%d",ans1);
-
+    int i;
+    for(i=1;i<=7;i++)
+    {
+        printf("Enter A Number :-");
+        scanf("%d",&s.m[i]);
+    }
+    for(i=1;i<=7;i++)
+    {
+        printf("\t\n Subject=01=&mark=%d",s.m[i]);
+    }
 }
