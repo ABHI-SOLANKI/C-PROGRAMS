@@ -1,20 +1,18 @@
-//WAP which calculate the division using structure.
+//WAP which print claculate the moduls division of two value using union,
 
 #include<stdio.h>
-struct div
+union mod
 {
-    int a,b;   
+    int a,b;
 }s1;
 int main()
 {
-    int ans1;
+    int ans;
     printf("Enter A Number 1:-");
     scanf("%d",&s1.a);
     printf("Enter A Number 2:-");
     scanf("%d",&s1.b);
 
-    ans1=s1.a / s1.b;
-
-    printf("\nAns of div is=%d",ans1);
-
+    ans=s1.a/s1.b;
+    printf("Ans Is =%d",ans);
 }
